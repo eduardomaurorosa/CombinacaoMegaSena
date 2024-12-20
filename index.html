@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Combinações - Mega-Sena</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Combinações do Preto</h1>
+        <p>Selecione as dezenas clicando na cartela abaixo:</p>
+        
+        <div class="cartela" id="cartela">
+            <!-- Os números de 1 a 60 serão gerados dinamicamente -->
+        </div>
+
+        <p id="numeros-escolhidos">Números escolhidos: Nenhum</p>
+
+        <label for="jogos">Número de jogos:</label>
+        <input type="number" id="jogos" placeholder="Ex: 24" min="1">
+
+        <button id="gerar" disabled>Gerar Combinações</button>
+
+        <div class="results" id="resultados" style="display: none;">
+            <h3>Jogos Gerados:</h3>
+            <div id="jogos-gerados"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
